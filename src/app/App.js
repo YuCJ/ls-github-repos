@@ -1,9 +1,9 @@
 import { hot } from 'react-hot-loader/root';
-import Article from '../features/article/Article';
+import Search from '../features/search/Search';
 import React from 'react';
 
 function App() {
-  return <Article />;
+  return <Search />;
 }
 
 export default hot(App);
