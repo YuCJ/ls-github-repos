@@ -71,12 +71,17 @@
   },
   "dependencies": {
     "@hot-loader/react-dom": "^17.0.0",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
     "@reduxjs/toolkit": "^1.4.0",
+    "axios": "^0.21.0",
     "core-js": "2",
+    "parse-link-header": "^1.0.1",
+    "qs": "^6.9.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-hot-loader": "^4.13.0",
-    "react-redux": "^7.2.2",
-    "styled-components": "^4.4.1"
+    "react-redux": "^7.2.2"
   }
 }

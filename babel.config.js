@@ -1,5 +1,5 @@
-const isProduction = process.env.NODE_ENV === 'production'
-const isTest = process.env.NODE_ENV === 'test'
+const isProduction = process.env.NODE_ENV === 'production';
+const isTest = process.env.NODE_ENV === 'test';
 
 module.exports = {
   ignore: isTest ? [] : ['**/__test__/**/*'],
@@ -23,13 +23,6 @@ module.exports = {
   ],
   plugins: [
     'react-hot-loader/babel',
-    [
-      'babel-plugin-styled-components',
-      {
-        displayName: !isProduction,
-        pure: isProduction,
-      },
-    ],
     '@babel/plugin-proposal-class-properties',
   ],
-}
+};
