@@ -3,6 +3,8 @@ import { searchRepos } from './searchReposSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import React from 'react';
 import InfiniteScrollObserver from './InfiniteScrollObserver';
+// @material-ui
+import Typography from '@material-ui/core/Typography';
 
 export default function LoadMore() {
   const page = useSelector(state => state.searchRepos.page);
@@ -16,9 +18,16 @@ export default function LoadMore() {
     dispatch(searchRepos(query, perPage, page + 1));
   };
   return (
-    <InfiniteScrollObserver
-      onIntersect={searchNext}
-      isWatching={!error && !isLoading && !isEnd}
-    />
+    <>
+      <InfiniteScrollObserver
+        onIntersect={searchNext}
+        isWatching={!error && !isLoading && !isEnd}
+      />
+      {pageCount > 0 && isEnd ? (
+        <Typography align="center" variant="body1">
+          已經到底了
+        </Typography>
+      ) : null}
+    </>
   );
 }

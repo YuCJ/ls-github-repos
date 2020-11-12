@@ -1,8 +1,9 @@
-import { perPage } from './constants';
+import { perPage, debounceDelay } from './constants';
 import { searchRepos, resetSearchRepos } from './searchReposSlice';
 import { useDispatch } from 'react-redux';
 import React, { useState } from 'react';
 import useDebouncedEffect from '../../hooks/useDebouncedEffect';
+// @material-ui
 import TextField from '@material-ui/core/TextField';
 
 function Input() {
@@ -16,7 +17,7 @@ function Input() {
         dispatch(searchRepos(value, perPage, 1));
       }
     },
-    3000,
+    debounceDelay,
     [value]
   );
   return (

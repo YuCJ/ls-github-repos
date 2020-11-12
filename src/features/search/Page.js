@@ -9,5 +9,5 @@ export default function Page({ page }) {
 }
 
 Page.propTypes = {
-  page: PropTypes.number.isRequired,
+  page: PropTypes.string.isRequired,
 };

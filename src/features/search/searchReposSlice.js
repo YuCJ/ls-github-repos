@@ -54,10 +54,7 @@ export const searchReposSlice = createSlice({
       state.isLoading = false;
     },
     searchReposFailure(state, { payload: error }) {
-      state.error = {
-        message: error.message,
-        status: error.status,
-      };
+      state.error = error;
       state.isLoading = false;
     },
   },
@@ -83,7 +80,11 @@ export function searchRepos(query, perPage = 10, page = 1) {
         searchReposSuccess({ repos, page, pageCount, repoCount, query })
       );
     } catch (error) {
-      dispatch(searchReposFailure(error));
+      dispatch(
+        searchReposFailure({
+          message: error.message,
+        })
+      );
     }
   };
 }

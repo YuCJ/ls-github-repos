@@ -5,7 +5,8 @@ export default function Message() {
   const query = useSelector(state => state.searchRepos.query);
   const isLoading = useSelector(state => state.searchRepos.isLoading);
   const repoCount = useSelector(state => state.searchRepos.repoCount);
-  if (isLoading || repoCount || !query) {
+  const error = useSelector(state => state.searchRepos.error);
+  if (isLoading || repoCount || !query || error) {
     return null;
   }
   return <div>No matched case with query: {query}</div>;

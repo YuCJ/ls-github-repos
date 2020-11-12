@@ -1,12 +1,13 @@
 import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import React from 'react';
+// @material-ui
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles({
   root: {
@@ -32,12 +33,18 @@ export default function Repo({ repoId }) {
         <Typography variant="body2" color="textSecondary">
           {repo.language}
         </Typography>
-        <Typography variant="body" component="p">
+        <Typography variant="body1" component="p">
           {repo.description}
         </Typography>
       </CardContent>
       <CardActions className={classes.actions}>
-        <Button color="primary" size="small" href={repo.html_url}>
+        <Button
+          color="primary"
+          size="small"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          href={repo.html_url}
+        >
           Detail
         </Button>
       </CardActions>
@@ -46,5 +53,5 @@ export default function Repo({ repoId }) {
 }
 
 Repo.propTypes = {
-  repoId: PropTypes.string.isRequired,
+  repoId: PropTypes.number.isRequired,
 };
