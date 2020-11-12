@@ -17,6 +17,8 @@
 - [x] 保留 pagination 資料並將 repo 資料 normalized，程式擴充或更改功能會更容易
 - [x] 使用 Redux Best Practice 建議的資料結構和 `@reduxjs/toolkit` 工具
 
+![data dependencies](https://yucj.github.io/ls-github-repos/data-deps.png)
+
 還可優化的部分：
 
 - [ ] infinite scroll 資料是一直 append 增加，但 React + Redux 的邏輯會讓整個 list 都 re-render，當清單會成長很大時可再優化，例如使用 windowing 等方式只 render 看得到的部分
