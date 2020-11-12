@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/YuCJ/react-static-site-template/compare/v1.2.1...v1.3.0) (2020-11-12)
+
+
+### Features
+
+* add components ([aedb87d](https://github.com/YuCJ/react-static-site-template/commit/aedb87d4d3deb520554d3a28f678d9696fb6f523))
+* add github api ([dfb5251](https://github.com/YuCJ/react-static-site-template/commit/dfb5251cf4a48b49311dad3f1b5c430d1821977f))
+* add infinite scroll ([d99341e](https://github.com/YuCJ/react-static-site-template/commit/d99341ef6b671eab3d52019facefed5adadc30eb))
+* add meterial-ui ([92f90da](https://github.com/YuCJ/react-static-site-template/commit/92f90daa8c2c666d9ee639ccf0d335e7ce644d27))
+* add searchRepos slice ([d16bdce](https://github.com/YuCJ/react-static-site-template/commit/d16bdce0785f687e53ad19ac7147ab4660ba4100))
+
+
+### Bug Fixes
+
+* update components ([8204d46](https://github.com/YuCJ/react-static-site-template/commit/8204d46339fe09e9222045252326e3ea1a88f5dc))
+
+
+### Documentations
+
+* add README.md ([7a32adc](https://github.com/YuCJ/react-static-site-template/commit/7a32adc038d3d02c52bf2e7c3ee6fb6d547f79d9))
+* update README.md ([99134ed](https://github.com/YuCJ/react-static-site-template/commit/99134ed37c7a5a31627563397007d55303017eac))
+
+
+### Chores
+
+* update dist and package.json ([c1bcf62](https://github.com/YuCJ/react-static-site-template/commit/c1bcf62ab3d5423f12e2190ebcbccb54cd625521))
+* update env ([b6e372e](https://github.com/YuCJ/react-static-site-template/commit/b6e372e3d7cb37370a5d9591eb0e32351d681268))
+* update html template and add polyfill ([e1d2dcf](https://github.com/YuCJ/react-static-site-template/commit/e1d2dcfdd5bbd044cf863fd2f88d34becee772e4))
+
 ### [1.2.1](https://github.com/YuCJ/react-static-site-template/compare/v1.2.0...v1.2.1) (2020-11-09)
 
 
