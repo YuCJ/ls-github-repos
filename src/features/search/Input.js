@@ -2,13 +2,8 @@ import { perPage } from './constants';
 import { searchRepos, resetSearchRepos } from './searchReposSlice';
 import { useDispatch } from 'react-redux';
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import useDebouncedEffect from '../../hooks/useDebouncedEffect';
-
-const StyledInput = styled.input`
-  height: 2rem;
-  font-size: 2rem;
-`;
+import TextField from '@material-ui/core/TextField';
 
 function Input() {
   const [value, setValue] = useState('');
@@ -25,10 +20,14 @@ function Input() {
     [value]
   );
   return (
-    <StyledInput
+    <TextField
+      variant="outlined"
+      margin="normal"
+      fullWidth
       value={value}
       onChange={e => setValue(e.target.value)}
-      placeholder="請輸入"
+      label="請輸入 search query"
+      autoFocus
     />
   );
 }
