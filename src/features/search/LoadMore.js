@@ -2,6 +2,7 @@ import { perPage } from './constants';
 import { searchRepos } from './searchReposSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import React from 'react';
+import InfiniteScrollObserver from './InfiniteScrollObserver';
 
 export default function LoadMore() {
   const page = useSelector(state => state.searchRepos.page);
@@ -15,10 +16,9 @@ export default function LoadMore() {
     dispatch(searchRepos(query, perPage, page + 1));
   };
   return (
-    <div>
-      {!error &&
-        !isLoading &&
-        (isEnd ? 'isEnd' : <button onClick={searchNext}>load more</button>)}
-    </div>
+    <InfiniteScrollObserver
+      onIntersect={searchNext}
+      isWatching={!error && !isLoading && !isEnd}
+    />
   );
 }
