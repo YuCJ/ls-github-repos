@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 });
 
 export default function Repo({ repoId }) {
-  const repo = useSelector(state => state.searchRepos.reposById[repoId]);
+  const repo = useSelector(state => state.searchRepos.reposById?.[repoId]);
   const classes = useStyles();
   return (
     <Card className={classes.root}>

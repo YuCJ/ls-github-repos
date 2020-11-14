@@ -16,12 +16,13 @@
 - [x] 使用 Redux 管理頁面狀態和資料，更容易寫測試並且開發時可用 devtool 檢視狀態運作是否正確
 - [x] 保留 pagination 資料並將 repo 資料 normalized，程式擴充或更改功能會更容易
 - [x] 使用 Redux Best Practice 建議的資料結構和 `@reduxjs/toolkit` 工具
+- [x] 使用 React.memo 讓已經 render 過的頁數不會重複無意義的 re-render
 
 ![data dependencies](https://yucj.github.io/ls-github-repos/data-deps.png)
 
 還可優化的部分：
 
-- [ ] infinite scroll 資料是一直 append 增加，但 React + Redux 的邏輯會讓整個 list 都 re-render，當清單會成長很大時可再優化，例如使用 windowing 等方式只 render 看得到的部分
+- [ ] infinite scroll 會讓整個 list 越長越大，如果瀏覽器沒有處理可視範圍外的 DOM 元件優化，有可能會造成效能問題，屆時可以嘗試使用 windowing 的方式處理（網頁實際上只會有可視範圍上下的 list）。
 
 ## Run dev server
 
