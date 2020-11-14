@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/YuCJ/react-static-site-template/compare/v1.3.0...v1.3.1) (2020-11-14)
+
+
+### Bug Fixes
+
+* replace throttle with debounce ([89ce68e](https://github.com/YuCJ/react-static-site-template/commit/89ce68e4a7d748d87d6f8c8fcecd59b5d3c79afe))
+
+
+### Chores
+
+* update dist ([2c3c742](https://github.com/YuCJ/react-static-site-template/commit/2c3c742f2cdc4b259c1413788709930083fc3c91))
+
 ## [1.3.0](https://github.com/YuCJ/react-static-site-template/compare/v1.2.1...v1.3.0) (2020-11-12)
 
 
