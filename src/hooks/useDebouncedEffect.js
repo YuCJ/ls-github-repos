@@ -1,16 +1,16 @@
 import { useEffect, useRef } from 'react';
 
 const useDebouncedEffect = (effect, delay, deps = []) => {
-  const lastRef = useRef(null);
+  const timerRef = useRef(null);
   useEffect(
     () => {
-      const now = Date.now();
-      const last = lastRef.current;
-      const timeout = last && now - last < delay ? delay - (now - last) : delay;
-      const timer = setTimeout(() => {
-        lastRef.current = now;
+      const timer = timerRef.current;
+      if (timer) {
+        clearTimeout(timer);
+      }
+      timerRef.current = setTimeout(() => {
         effect();
-      }, timeout);
+      }, delay);
       return () => {
         clearTimeout(timer);
       };
