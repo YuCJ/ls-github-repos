@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://github.com/YuCJ/react-static-site-template/compare/v1.3.1...v1.3.2) (2020-11-14)
+
+
+### Chores
+
+* update dist ([5534515](https://github.com/YuCJ/react-static-site-template/commit/55345152fb8dee7d209353ec66115e7bd3be283e))
+
+
+### Refactors
+
+* make type converting more explicit ([7cf26c6](https://github.com/YuCJ/react-static-site-template/commit/7cf26c6dc0d259abd4da99d9a2b1f54b4d3ab209))
+* prevent unnecessary re-rendering of Page ([153ecf7](https://github.com/YuCJ/react-static-site-template/commit/153ecf7ed12844633acedaa8369dbea4d42d4400))
+
 ### [1.3.1](https://github.com/YuCJ/react-static-site-template/compare/v1.3.0...v1.3.1) (2020-11-14)
 
 
