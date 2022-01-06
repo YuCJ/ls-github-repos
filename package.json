@@ -78,7 +78,7 @@
     "@reduxjs/toolkit": "^1.4.0",
     "axios": "^0.21.0",
     "core-js": "2",
-    "parse-link-header": "^1.0.1",
+    "parse-link-header": "^2.0.0",
     "qs": "^6.9.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
